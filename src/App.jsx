@@ -6,6 +6,7 @@ import PaymentPopup from './Components/PaymentPopup';
 const App = () => {
   return (
     <div className="">
+      <PaymentPopup/>
       <div className=''>
         <div className=" flex items-center justify-center w-full md:w-500">
           <div className="  border-t border-gray-200"></div>

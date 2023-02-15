@@ -11,8 +11,7 @@ const initialState = {
     milk_count: 0,
     milo_count: 0,
 
-    numOfProducts: 0,
-    totalCart: 0,
+    payment_active: false,
 };
 const marketReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -33,7 +32,11 @@ const marketReducer = (state = initialState, action) => {
         case 'DECREMENT_MILO':
             return { ...state, milo_count: state.milo_count - 1 };
         case 'CLEAR_CART':
-            return { ...state, cereal_count: 0, chips_count: 0, milk_count: 0, milo_count:0 };
+            return { ...state, cereal_count: 0, chips_count: 0, milk_count: 0, milo_count: 0 };
+        case 'ACTIVE_PAYMENT_POPUP':
+            return { ...state, payment_active: true };
+        case 'INACTIVE_PAYMENT_POPUP':
+            return { ...state, payment_active: false };
         default:
             return state;
     }
