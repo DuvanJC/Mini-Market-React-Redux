@@ -1,8 +1,18 @@
 const initialState = {
+    //Products Price
+    cereal_price: 4.5,
+    chips_price: 4.5,
+    milk_price: 0.6,
+    milo_price: 4.1,
+
+    // Products Number
     cereal_count: 0,
     chips_count: 0,
     milk_count: 0,
     milo_count: 0,
+
+    numOfProducts: 0,
+    totalCart: 0,
 };
 const marketReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -22,6 +32,8 @@ const marketReducer = (state = initialState, action) => {
             return { ...state, milo_count: state.milo_count + 1 };
         case 'DECREMENT_MILO':
             return { ...state, milo_count: state.milo_count - 1 };
+        case 'CLEAR_CART':
+            return { ...state, cereal_count: 0, chips_count: 0, milk_count: 0, milo_count:0 };
         default:
             return state;
     }
