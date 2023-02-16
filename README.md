@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Commands to run localy this project:
+## How to run the repository in a local environment:
 
 In the project directory:
 
