@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PaymentPopup from '../PaymentPopup';
 const MultiProduct = () => {
 
     let cereal_count = useSelector(state => state.cereal_count);
@@ -24,9 +25,6 @@ const MultiProduct = () => {
     }
     const handleDecrementMilo = () => {
         dispatch({ type: 'DECREMENT_MILO' });
-    }
-    const handleActivePaymentPopup = () => {
-        dispatch({ type: 'ACTIVE_PAYMENT_POPUP' });
     }
     const getTotalProduct = (product, price) => {
         let total = product * price;
@@ -144,9 +142,7 @@ const MultiProduct = () => {
                     </div>
                 </div>
             </div>
-            <button className="bg-blue-800 hover:bg-blue-700 text-white py-2 px-4 rounded" onClick={() => handleActivePaymentPopup()} >
-            ✔ Paga con <span className='font-semibold'>Wompy</span>
-            </button>
+            <PaymentPopup/>
         </div>
     );
 };

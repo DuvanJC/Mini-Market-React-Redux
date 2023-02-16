@@ -33,10 +33,6 @@ const marketReducer = (state = initialState, action) => {
             return { ...state, milo_count: state.milo_count - 1 };
         case 'CLEAR_CART':
             return { ...state, cereal_count: 0, chips_count: 0, milk_count: 0, milo_count: 0 };
-        case 'ACTIVE_PAYMENT_POPUP':
-            return { ...state, payment_active: true };
-        case 'INACTIVE_PAYMENT_POPUP':
-            return { ...state, payment_active: false };
         default:
             return state;
     }
