@@ -55,7 +55,7 @@ const MultiProduct = () => {
                             </div>
                         </div>
                         <div class="absolute right-0">
-                            <button className="w-8 h-8 bg-gray-300 bg-gray-300 hover:border-purple-600" onClick={() => handleDecrementChips()}>-</button>
+                            <button className="w-8 h-8 bg-gray-300" onClick={() => handleDecrementChips()}>-</button>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ const MultiProduct = () => {
                                 </div>
                             </div>
                             <div class="absolute right-0">
-                                <button className="w-8 h-8 bg-gray-300 bg-gray-300 hover:border-purple-600" onClick={() => handleDecrementMilk()}>-</button>
+                                <button className="w-8 h-8 bg-gray-300" onClick={() => handleDecrementMilk()}>-</button>
                             </div>
                         </div>
                     </>
@@ -102,7 +102,7 @@ const MultiProduct = () => {
                                 </div>
                             </div>
                             <div class="absolute right-0">
-                                <button className="w-8 h-8 bg-gray-300 bg-gray-300 hover:border-purple-600" onClick={() => handleDecrementMilo()}>-</button>
+                                <button className="w-8 h-8 bg-gray-300" onClick={() => handleDecrementMilo()}>-</button>
                             </div>
                         </div>
                     </>
@@ -124,7 +124,7 @@ const MultiProduct = () => {
                                 </div>
                             </div>
                             <div class="absolute right-0">
-                                <button className="w-8 h-8 bg-gray-300 bg-gray-300 hover:border-purple-600" onClick={() => handleDecrementCereal()}>-</button>
+                                <button className="w-8 h-8 bg-gray-300" onClick={() => handleDecrementCereal()}>-</button>
                             </div>
                         </div>
                     </>
