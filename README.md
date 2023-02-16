@@ -2,11 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Commands to run localy this project:
 
 In the project directory:
 
-First, to install the dependencies, use:
+First, to install the dependencies use:
 
 ### `npm install`
 
@@ -20,12 +21,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+
+
 ## How to run the tests:
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
 
 ## How to build the app for a production environment:
 
